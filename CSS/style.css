@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
 
-// LOL
 
 *
 {
@@ -676,6 +675,27 @@ section .img1,.img3
     color: white;
 }
         
+        }
+
+@media (max-width:637px)
+        {
+            .container
+            {
+                width: 100%;
+                height: 100vh;
+                background: url(../images/bgmain2.jpg);
+                background-size: cover;
+                background-position: center;
+                /* background-position: 50%; */
+                /* background-attachment: fixed; */
+                background-repeat: no-repeat;
+                position: relative;
+                display: flex;
+                /* align-items: center; */
+                justify-content:center
+                
+               
+            }
         }
 
 

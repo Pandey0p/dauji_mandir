@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* --------------------------head and nav-------------------------- */
+html
+{
+    font-size: 62.50%;
+    overflow-x: hidden;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+.num
+{  
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: bold;
+    /* font-size: 2rem; */
+}
+body{
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    
+}
+a{
+    text-decoration: none;
+}
+
+/* ------------------------------head--------------------------- */
+.head
+
+{  max-width: 100%;
+    /* height: 7vh; */
+    background-color: #de8d38;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.5rem 0;
+}
+.call,.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+.call,.location:hover
+{
+    cursor: pointer;
+}
+.head .social-icons
+{
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------------------head and nav-------------------------- */
+
+.social-icons-img
+{
+    max-width:40px;
+    cursor: pointer;
+    margin: 0 0.5rem;
+
+}
+
+
+
+/* ---------------------------navbar--------------------- */
+.header
+{  
+    background-color: white;
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding: 1rem 5rem;
+    position:sticky;
+    top: 0.01rem;
+    transition: position 0.5s;
+    z-index: 2;
+}
+.logo-img
+{
+        width: 60px;
+}
+.logo
+{   
+    flex: 1;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.logo h1
+{
+    padding-left: 1rem;
+    font-size:2.5rem;
+    color: #de8d38;
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+.navbar ul
+{ 
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.navbar ul li
+{
+    padding: 1rem 3rem;      
+}
+.navbar ul li a{
+    color: black;
+    position: relative;
+    font-size: 2rem;
+    font-family: 'Jost', sans-serif;
+}
+.navbar ul li a:hover
+{
+    color: #de8d38;
+    transition: color 0.3s;
+}
+nav ul li a::after
+{
+    content: '';
+    width: 0;
+    height: 0.3rem;
+    position: absolute;
+    bottom: -0.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #de8d38;
+    transition: width 0.3s;
+}
+nav ul li a:hover:after
+{   
+    width: 100%;
+}
+.mobile-navbar-btn
+{
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.mobile-navbar-icon
+{
+    width: 4rem;
+    height: 4rem;
+    color: black;
+}
+.mobile-navbar-icon[name="close-outline"]
+{
+    display: none;
+}
+
+@media (max-width:1295px)
+{
+    .mobile-navbar-btn
+    {
+        display: block;
+        /* position: relative;
+        padding: 15px 20px; */
+        z-index:999;
+        color: black;
+        border: 3px solid black;
+        
+    }
+    .header
+    {
+        position: relative;
+    }
+    .navbar
+    {
+        /* margin-top: 15px; */
+        /* display: none; */
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+     .menu
+     {
+        align-items: center;
+        flex-direction: column;
+     }
+
+    .active .navbar
+    {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events:auto;
+    }
+    .active .mobile-navbar-btn .mobile-navbar-icon[name="close-outline"]
+    {
+        display: block;
+    }
+    .active .mobile-navbar-btn .mobile-navbar-icon[name="menu-outline"]
+    {
+        display: none;
+    }
+    
+}
+@media (max-width:560px)
+{
+   .navbar
+   {
+    padding: 0 2.4em;
+   }
+}
+/* -----------------tittels------------------------ */
+.tittles
+{   
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tittle1,.tittle2
+{
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.tittle1 h5
+{
+    color: #b76209;
+    /* font-family: 'Jost', sans-serif; */
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+    
+}
+
+.tittle2 h2
+{  
+    color: #0c0c0c;
+    /* font-family: jost,Sans-serif; */
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+.description
+{
+   max-width: 55%;
+   margin-top:0.8rem;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+.description p
+{
+    font-size: 1.8rem;
+    line-height:2;
+    
+}
+
+/* ------------------------------footer------------------------ */
+footer{ 
+    max-width: 100%;
+    /* height: 60vh; */
+    background-color: #222429;
+    margin-top:5rem ;
+    padding-bottom: 1.5rem;
+    
+}
+.foot-con
+{  
+     max-width: 100%;
+    display: flex;
+    justify-content:space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* margin: 0 ; */
+    margin-top: 1rem;
+    padding: 5rem 0rem; 
+    /* border: 3px solid black; */
+}
+.about-us
+{   
+    width:30%;
+    margin-right: 2rem;
+    padding-bottom: 4rem;
+}
+.about-us img
+{
+    width: 10vw;
+}
+.about-us p
+{
+    font-size: 2.5rem;
+    
+}
+.about-us h3,.menu-list h3,.helpful h3
+{ 
+ margin-bottom: 3rem;
+ color: #de8d38;
+ font-family: 'Tiro Devanagari Hindi', serif;
+ font-size: 3rem;
+ font-weight: bold;
+ position: relative;
+}
+.menu-list p,.helpful p
+{
+  font-size: 2rem;
+  
+}
+.menu
+{
+    margin-right: 2.5rem;
+}
+.about-us h3::after
+{
+    content: '';
+    width: 37%;
+    height: 0.1rem;
+    position: absolute;
+    bottom: -0.8rem;
+    left:-0.1rem;
+    background: #de8d38;
+}
+.menu-list h3::after
+{
+    content: '';
+    width: 100%;
+    height: 0.1rem;
+    position: absolute;
+    bottom: -0.8rem;
+    left:-0.1rem;
+    background: #de8d38;
+}
+.helpful h3::after
+{
+    content: '';
+    width: 27%;
+    height: 0.1rem;
+    position: absolute;
+    bottom: -0.8rem;
+    left:-0.1rem;
+    background: #de8d38;
+}
+.about-us .logo-img
+{
+    margin-bottom: 2rem;    
+}
+.copy-section
+{
+text-align: center;
+}
+.line
+{  background-color: silver;
+    max-width: 70%;
+    height: 1px;
+    margin: 2rem auto;
+}
+.copy-section p
+{
+    /* margin-bottom: 4rem; */
+    color: silver;
+    font-size: 1.5rem;
+}
+.menu-list ul li {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+.helpful span
+{
+    margin-bottom: 2rem;
+}
+.foot-con p
+{
+    color: silver;
+}
+.call-foot,.mail
+{   
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.call-foot,.mail
+{
+    margin-bottom: 2rem;
+}
+.call-foot p, .mail p
+{
+    margin-left: 0.5rem;
+}
+
+
+/* ------------------------------footer------------------------ */

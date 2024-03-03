@@ -6,31 +6,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
 
 
-*
-{
+
+* {
     font-family: 'Tiro Devanagari Hindi', serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.read
-{
+.read {
     color: #b76209;
     font-size: 1.8rem;
     font-family: 'Tiro Devanagari Hindi', serif;
     margin-left: 0.5rem;
 }
-.read:hover
-{
+
+.read:hover {
     cursor: pointer;
 
 }
 
 
 /* -----------------------------container---------------------------- */
-.container
-{
+.container {
     width: 100%;
     height: 100vh;
     background: url(../images/bgmainpng.jpg);
@@ -40,22 +38,19 @@
     position: relative;
     display: flex;
     /* align-items: center; */
-    justify-content:center
-    
-   
+    justify-content: center
 }
 
-.container::before{
+.container::before {
     background-color: #ffd1a41a;
     content: '';
     display: block;
     height: 100%;
     position: absolute;
     width: 100%;
-  }
+}
 
-.text-book
-{
+.text-book {
     /* color: white;
     position: absolute;
     bottom: 20%; */
@@ -70,11 +65,11 @@
     /* justify-content: center; */
     /* flex-wrap: wrap; */
     /* border: 2px solid black; */
-  /* background-color: red; */
-   
+    /* background-color: red; */
+
 }
-.text-book h2
-{
+
+.text-book h2 {
     font-size: 6rem;
     /* color: #b76209; */
     color: white;
@@ -83,48 +78,47 @@
     margin-top: 8rem;
     margin-bottom: 2rem;
 }
-.text-book h1
-{
+
+.text-book h1 {
     font-size: 9rem;
     line-height: 9.5rem;
     margin-left: -0.5;
     color: transparent;
     -webkit-text-stroke: 0.1rem white;
     background-image: url(../images/back.png);
-    background-color: rgb(0, 0, 0,0.55);
-    -webkit-background-clip:text;
+    background-color: rgb(0, 0, 0, 0.55);
+    -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 60s infinite;
     font-family: 'Tiro Devanagari Hindi', serif;
-    
-    
+
+
 
 }
+
 @keyframes back {
-    100%
-    {
+    100% {
         background-position: 200rem 0;
     }
-    
+
 }
-.text-book h3
-{
+
+.text-book h3 {
     font-size: 2.5rem;
     font-weight: bold;
     /* font-family: 'jost', sans-serif; */
     color: white;
 }
 
-.text-book .row
-{
+.text-book .row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 3rem;
-    
+
 }
-.text-book a
-{
+
+.text-book a {
     color: white;
     text-decoration: none;
     padding: 1.2rem 2.5rem;
@@ -138,6 +132,7 @@
     transform: translateY(0px);
     transition: transform 1s;
 }
+
 /* .text-book a:hover
 {
     transform: translateY(-4px);
@@ -147,29 +142,32 @@
 } */
 
 /* ------------------------main---------------------------- */
-#about
-{
+#about {
     width: 100%;
     padding-top: 10rem;
 }
 
 /* ---------------------services------------------ */
 
-.services
-{   
+.services {
     width: 80%;
     display: grid;
     /* justify-content: center;
     align-items: center; */
-    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     /* grid-template-rows: repeat(2,1fr); */
     gap: 3rem;
     margin: 2rem auto;
-   
-    
+
+
 }
-.item-1,.item-2,.item-3,.item-4,.item-5,.item-6
-{  
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6 {
     background: #fff5eb;
     /* padding: 4rem 2remx; */
     padding: 3rem 2rem;
@@ -178,89 +176,106 @@
     transform: translateY(0);
     transition: transform 0.5s ease-in-out;
 }
-.services  h3
-{
+
+.services h3 {
     font-size: 2.1rem;
-    
-}
-.services  p
-{
-    font-size: 2rem;
-    
+
 }
 
-.item-1:hover,.item-2:hover,.item-3:hover,.item-4:hover,.item-5:hover,.item-6:hover{
+.services p {
+    font-size: 2rem;
+
+}
+
+.item-1:hover,
+.item-2:hover,
+.item-3:hover,
+.item-4:hover,
+.item-5:hover,
+.item-6:hover {
     transform: translateY(-0.5rem);
     transition: transform 0.5s ease-in-out;
 }
-.item-1:hover #item-heading-1,.item-2:hover #item-heading-2,.item-3:hover #item-heading-3,.item-4:hover #item-heading-4,.item-5:hover #item-heading-5,.item-6:hover #item-heading-6
-{
+
+.item-1:hover #item-heading-1,
+.item-2:hover #item-heading-2,
+.item-3:hover #item-heading-3,
+.item-4:hover #item-heading-4,
+.item-5:hover #item-heading-5,
+.item-6:hover #item-heading-6 {
     color: #b76209;
 }
-.img-ser
-{
+
+.img-ser {
     background: #ffd2a4;
     border-radius: 50%;
     padding: 0.8rem;
-    width:20%;
-    display:flex;
+    width: 20%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 }
-.img-ser img
-{   width: 100%;
+
+.img-ser img {
+    width: 100%;
     transition: width 1s;
 }
-.item-1:hover #item1-img,.item-2:hover #item2-img,.item-3:hover #item3-img,.item-4:hover #item4-img,.item-5:hover #item5-img,.item-6:hover #item6-img
-{
-    width: 70%; 
-    transition: width 1s;   
+
+.item-1:hover #item1-img,
+.item-2:hover #item2-img,
+.item-3:hover #item3-img,
+.item-4:hover #item4-img,
+.item-5:hover #item5-img,
+.item-6:hover #item6-img {
+    width: 70%;
+    transition: width 1s;
 }
-.services  p
-{
+
+.services p {
     padding-top: 1rem;
     line-height: 2;
 }
 
 /* -------------------images----------------------- */
-#about-us img
-{
+#about-us img {
     box-shadow: 0 0 3rem #de8d38;
 }
-.mandirimage{
-    display:flex;
+
+.mandirimage {
+    display: flex;
     width: 100%;
-    justify-content:center;
+    justify-content: center;
     /* align-items: center;     */
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin: 2rem 0;
     /* padding-bottom: 2rem; */
     /* border: 3px solid black; */
-    
-   
+
+
 }
 
-.img1,.img3 
-{  
-    
-    width:25vw;
+.img1,
+.img3 {
+
+    width: 300px;
     border-radius: 20px;
     margin: 1rem 1rem;
     /* overflow: hidden; */
     height: 40vh;
 }
-.img2
-{  
-    width:50rem;
+
+.img2 {
+    width: 400px;
     border-radius: 20px;
     margin: 1rem 1rem;
     height: 40vh;
 }
+
 /* ---------------------about------------------ */
 
-.founder
-{  width: 100%;
+.founder {
+    width: 100%;
     /* height: 85vh; */
     margin-top: 3rem;
     /* padding: 0.2rem 1rem; */
@@ -268,50 +283,50 @@
     padding-bottom: 3rem;
     background-color: silver;
 }
-.founder-image
-{  
+
+.founder-image {
     width: 70%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 1rem auto;
-    padding-bottom: 2rem ;
+    padding-bottom: 2rem;
     padding: 0 1rem;
 }
-.item-image
-{
+
+.item-image {
     width: 300px;
     padding: 0 1rem;
     /* border: 2px solid black; */
     text-align: center;
     z-index: 1;
 }
-.founder-image img
-{
+
+.founder-image img {
     border-radius: 0.5rem;
     width: 250px;
     /* z-index: 1; */
 }
-.founder-image-item-text
-{ 
-    margin-bottom:2rem;
+
+.founder-image-item-text {
+    margin-bottom: 2rem;
     text-align: center;
     color: black;
-    
+
 }
-.founder-image-item h3
-{
+
+.founder-image-item h3 {
     color: black;
     font-size: 3rem;
     padding-top: 1rem;
 }
-.founder-image-item p
-{
+
+.founder-image-item p {
     color: black;
     font-weight: 600;
     line-height: 2;
     font-size: 1.3rem;
-    
+
 }
 
 /* ------------------------doha------------------------------- */
@@ -323,8 +338,7 @@
 
 
 
-.doha
-{
+.doha {
     width: 100%;
     height: 15vh;
     margin: 2rem 0;
@@ -333,241 +347,230 @@
 }
 
 
-.box
-{
- font-size: 5rem;
- font-weight:bold;
- opacity: 0;
- position: absolute;
- width: 100%;
- text-align: center;
- /* background-color: green; */
- margin-bottom: 5rem;
+.box {
+    font-size: 5rem;
+    font-weight: bold;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    /* background-color: green; */
+    margin-bottom: 5rem;
 
 }
 
-.b1
-{
+.b1 {
     animation: dohas1 20s infinite;
     /* animation-delay: 5s; */
 }
-.b2
-{
+
+.b2 {
     animation: dohas2 20s infinite;
 }
-.b3
-{
+
+.b3 {
     animation: dohas3 20s infinite;
 }
-.b4
-{
+
+.b4 {
     animation: dohas4 20s infinite;
 }
-.b5
-{
+
+.b5 {
     animation: dohas5 20s infinite;
 }
 
 @keyframes dohas1 {
-    0%
-    {
+    0% {
         opacity: 0;
     }
-    10%
-    {
+
+    10% {
         opacity: 1;
     }
-    20%
-    {
+
+    20% {
         opacity: 0;
     }
-    
+
 }
 
 @keyframes dohas2 {
-    20%
-    {
+    20% {
         opacity: 0;
     }
-    30%
-    {
+
+    30% {
         opacity: 1;
     }
-    40%
-    {
+
+    40% {
         opacity: 0;
     }
-    
+
 }
 
 @keyframes dohas3 {
-    40%
-    {
+    40% {
         opacity: 0;
     }
-    50%
-    {
+
+    50% {
         opacity: 1;
     }
-    60%
-    {
+
+    60% {
         opacity: 0;
     }
-    
+
 }
 
 @keyframes dohas4 {
-    60%
-    {
+    60% {
         opacity: 0;
     }
-    70%
-    {
+
+    70% {
         opacity: 1;
     }
-    80%
-    {
+
+    80% {
         opacity: 0;
     }
-    
+
 }
 
 @keyframes dohas5 {
-    80%
-    {
+    80% {
         opacity: 0;
     }
-    90%
-    {
+
+    90% {
         opacity: 1;
     }
-    100%
-    {
+
+    100% {
         opacity: 0;
     }
-    
+
+}
+
+
+
+
+@media only screen and (max-width: 810px) {
+
+    .box {
+        font-size: 4rem;
+        font-weight: bold;
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        /* background-color: green; */
+        margin-bottom: 5rem;
+
+    }
+}
+
+@media only screen and (max-width: 620px) {
+
+    .box {
+        font-size: 3rem;
+        font-weight: bold;
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        /* background-color: green; */
+        margin-bottom: 5rem;
+
+    }
 }
 
 
+@media only screen and (max-width: 460px) {
 
+    .box {
+        font-size: 2.5rem;
+        font-weight: bold;
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        /* background-color: green; */
+        margin-bottom: 5rem;
 
-@media only screen and (max-width: 810px){
-
-    .box
-{
- font-size: 4rem;
- font-weight:bold;
- opacity: 0;
- position: absolute;
- width: 100%;
- text-align: center;
- /* background-color: green; */
- margin-bottom: 5rem;
-
-}
+    }
 }
 
-@media only screen and (max-width: 620px){
+@media only screen and (max-width: 420px) {
 
-    .box
-{
- font-size: 3rem;
- font-weight:bold;
- opacity: 0;
- position: absolute;
- width: 100%;
- text-align: center;
- /* background-color: green; */
- margin-bottom: 5rem;
-
-}
-}
-
-
-@media only screen and (max-width: 460px){
-
-    .box
-{
- font-size: 2.5rem;
- font-weight:bold;
- opacity: 0;
- position: absolute;
- width: 100%;
- text-align: center;
- /* background-color: green; */
- margin-bottom: 5rem;
-
-}
-}
-
-@media only screen and (max-width: 420px){
-
-.services
-{   
-    width: 80%;
-    display: grid;
-    /* justify-content: center;
+    .services {
+        width: 80%;
+        display: grid;
+        /* justify-content: center;
     align-items: center; */
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    /* grid-template-rows: repeat(2,1fr); */
-    gap: 3rem;
-    margin: 2rem auto;
-   
-}
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* grid-template-rows: repeat(2,1fr); */
+        gap: 3rem;
+        margin: 2rem auto;
+
+    }
 }
 
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 350px) {
 
-    .services
-    {   
+    .services {
         width: 80%;
         display: grid;
         /* justify-content: center;
         align-items: center; */
-        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         /* grid-template-rows: repeat(2,1fr); */
         gap: 3rem;
         margin: 2rem auto;
-       
+
     }
-    }
-
-@media only screen and (max-width: 500px){
-section .img1,.img3 
-{  
-    
-    width:30rem;
-    border-radius: 20px;
-    margin: 1rem 1rem;
-}
- section .img2
-{  
-    width:40rem;
-    border-radius: 20px;
-    margin: 1rem 1rem;
-}
 }
 
+@media only screen and (max-width: 500px) {
 
-@media only screen and (max-width: 400px){
-    section .img1,.img3 
-    {  
-        
-        width:25rem;
+    section .img1,
+    .img3 {
+
+        width: 30rem;
         border-radius: 20px;
         margin: 1rem 1rem;
     }
-     section .img2
-    {  
-        width:35rem;
+
+    section .img2 {
+        width: 40rem;
         border-radius: 20px;
         margin: 1rem 1rem;
     }
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    section .img1,
+    .img3 {
+
+        width: 25rem;
+        border-radius: 20px;
+        margin: 1rem 1rem;
     }
 
-    @media only screen and (max-width: 1028px){
-    .text-book h2
-    {
+    section .img2 {
+        width: 35rem;
+        border-radius: 20px;
+        margin: 1rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 1028px) {
+    .text-book h2 {
         font-size: 4rem;
         /* color: #b76209; */
         color: white;
@@ -576,127 +579,146 @@ section .img1,.img3
         margin-top: 8rem;
         margin-bottom: 2rem;
     }
-    .text-book h1
-    {
+
+    .text-book h1 {
         font-size: 7rem;
         line-height: 9.5rem;
         margin-left: -0.5;
         color: transparent;
         -webkit-text-stroke: 0.1rem white;
         background-image: url(../images/back.png);
-        background-color: rgb(0, 0, 0,0.55);
-        -webkit-background-clip:text;
+        background-color: rgb(0, 0, 0, 0.55);
+        -webkit-background-clip: text;
         background-position: 0 0;
         animation: back 60s infinite;
         font-family: 'Tiro Devanagari Hindi', serif;
-        
-    } 
 
-    .text-book h3
-{
-    font-size: 2rem;
-    font-weight: bold;
-    /* font-family: 'jost', sans-serif; */
-    color: white;
-}
-    
     }
 
+    .text-book h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        /* font-family: 'jost', sans-serif; */
+        color: white;
+    }
 
-    @media only screen and (max-width: 780px){
-        .text-book h2
-        {
-            font-size: 3rem;
-            /* color: #b76209; */
-            color: white;
-            /* margin-left: 1rem; */
-            /* -webkit-text-stroke: 0.1rem #b76209; */
-            margin-top: 8rem;
-            margin-bottom: 2rem;
-        }
-        .text-book h1
-        {
-            font-size: 5rem;
-            line-height: 9.5rem;
-            margin-left: -0.5;
-            color: transparent;
-            -webkit-text-stroke: 0.1rem white;
-            background-image: url(../images/back.png);
-            background-color: rgb(0, 0, 0,0.55);
-            -webkit-background-clip:text;
-            background-position: 0 0;
-            animation: back 60s infinite;
-            font-family: 'Tiro Devanagari Hindi', serif;
-            
-        } 
-        .text-book h3
-{
-    font-size: 1.5rem;
-    font-weight: bold;
-    /* font-family: 'jost', sans-serif; */
-    color: white;
 }
-        
-        }
 
 
-        
-    @media only screen and (max-width: 780px){
-        .text-book h2
-        {
-            font-size: 2rem;
-            /* color: #b76209; */
-            color: white;
-            /* margin-left: 1rem; */
-            /* -webkit-text-stroke: 0.1rem #b76209; */
-            margin-top: 8rem;
-            margin-bottom: 2rem;
-        }
-        .text-book h1
-        {
-            font-size: 3.5rem;
-            line-height: 9.5rem;
-            margin-left: -0.5;
-            color: transparent;
-            -webkit-text-stroke: 0.1rem white;
-            background-image: url(../images/back.png);
-            background-color: rgb(0, 0, 0,0.55);
-            -webkit-background-clip:text;
-            background-position: 0 0;
-            animation: back 60s infinite;
-            font-family: 'Tiro Devanagari Hindi', serif;
-            
-        } 
-        .text-book h3
-{
-    font-size: 1.5rem;
-    font-weight: bold;
-    /* font-family: 'jost', sans-serif; */
-    color: white;
+@media only screen and (max-width: 780px) {
+    .text-book h2 {
+        font-size: 3rem;
+        /* color: #b76209; */
+        color: white;
+        /* margin-left: 1rem; */
+        /* -webkit-text-stroke: 0.1rem #b76209; */
+        margin-top: 8rem;
+        margin-bottom: 2rem;
+    }
+
+    .text-book h1 {
+        font-size: 5rem;
+        line-height: 9.5rem;
+        margin-left: -0.5;
+        color: transparent;
+        -webkit-text-stroke: 0.1rem white;
+        background-image: url(../images/back.png);
+        background-color: rgb(0, 0, 0, 0.55);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 60s infinite;
+        font-family: 'Tiro Devanagari Hindi', serif;
+
+    }
+
+    .text-book h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        /* font-family: 'jost', sans-serif; */
+        color: white;
+    }
+
 }
-        
-        }
 
-@media (max-width:637px)
-        {
-            .container
-            {
-                width: 100%;
-                height: 50vh;
-                background: url(../images/bgmain2.jpg);
-                background-size: cover;
-                background-position: center;
-                /* background-position: 50%; */
-                /* background-attachment: fixed; */
-                background-repeat: no-repeat;
-                position: relative;
-                display: flex;
-                /* align-items: center; */
-                justify-content:center
-                
-               
-            }
-        }
+
+
+@media only screen and (max-width: 780px) {
+    .text-book h2 {
+        font-size: 2rem;
+        /* color: #b76209; */
+        color: white;
+        /* margin-left: 1rem; */
+        /* -webkit-text-stroke: 0.1rem #b76209; */
+        margin-top: 8rem;
+        margin-bottom: 2rem;
+    }
+
+    .text-book h1 {
+        font-size: 3.5rem;
+        line-height: 9.5rem;
+        margin-left: -0.5;
+        color: transparent;
+        -webkit-text-stroke: 0.1rem white;
+        background-image: url(../images/back.png);
+        background-color: rgb(0, 0, 0, 0.55);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 60s infinite;
+        font-family: 'Tiro Devanagari Hindi', serif;
+
+    }
+
+    .text-book h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        /* font-family: 'jost', sans-serif; */
+        color: white;
+    }
+
+}
+
+
+
+@media (max-width:1120px) {
+
+
+    .mandirimage {
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        /* align-items: center;     */
+        flex-wrap: wrap;
+        margin: 2rem auto;
+        
+        /* padding-bottom: 2rem; */
+        /* border: 3px solid black; */
+    
+    
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:637px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        background: url(../images/bgmain2.jpg);
+        background-size: cover;
+        background-position: center;
+        /* background-position: 50%; */
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center
+    }
+}
 
 
 

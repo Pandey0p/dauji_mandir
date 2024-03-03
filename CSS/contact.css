@@ -28,11 +28,11 @@
 .contact .content h2::after
 {
     content: '';
-    width: 17%;
+    width: 68%;
     height: 0.3rem;
     position: absolute;
     bottom: -0.2rem;
-    right:35rem;
+    right: 5rem;
     background: #de8d38;
 }
 .contact .content p
